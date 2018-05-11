@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_image_cardiew"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardCornerRadiusImage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_image_cardiew"
+            android:background="@drawable/image"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:paddingTop="@dimen/paddingTop_cardview_image"
+            android:paddingLeft="@dimen/paddingLeft_cardview_image"
+            android:paddingBottom="@dimen/paddingBottom_cardview_image"
+            android:background="@color/transparent_cardview_image">
+
+            <TextView
+                android:id="@+id/ed_name_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_name_cardview"
+                android:textColor="@color/text_cardview_image"
+                android:textSize="@dimen/textSize_cardview_image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ed_time1_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text1_time_cardview"
+                    android:textColor="@color/text_cardview_image"
+                    android:textSize="@dimen/textSize_time_cardview_image"/>
+
+                <TextView
+                    android:id="@+id/ed_time2_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft_time_cardview_image"
+                    android:text="@string/text2_time_cardview"
+                    android:textColor="@color/text_cardview_image"
+                    android:textSize="@dimen/textSize_time_cardview_image"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/marginTop_like_cardview_image">
+
+                <CheckBox
+                    android:id="@+id/cb_like_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_like_selector"/>
+
+                <TextView
+                    android:id="@+id/ed_count_likes_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft_time_cardview_image"
+                    android:text="@string/text_likes_cardview"
+                    android:textColor="@color/text_cardview_image"
+                    android:textSize="@dimen/textSize_time_cardview_image"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
