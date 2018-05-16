@@ -10,7 +10,7 @@
     <dimen name="paddingBottom_cardview_image">5dp</dimen>
     <dimen name="paddingTop_cardview_image">5dp</dimen>
     <dimen name="height_bottombar">55dp</dimen>
-    <dimen name="height_appbarlayout">256dp</dimen>
+    <dimen name="height_appbarlayout">255dp</dimen>
     <dimen name="textSize_name_detail">20sp</dimen>
     <dimen name="paddingLeft_pictureDetail">10dp</dimen>
     <dimen name="paddingTop_pictureDetail">15dp</dimen>
