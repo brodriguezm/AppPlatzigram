@@ -33,7 +33,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        showToolbar("Home", false, view);
+        showToolbar(getResources().getString(R.string.text_tab_home), false, view);
 
         RecyclerView pictureRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView_picture);
 
@@ -50,9 +50,9 @@ public class HomeFragment extends Fragment {
 
     public ArrayList<Picture> getPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("","Bryan Rodríguez","5 días","10 Me gusta"));
-        pictures.add(new Picture("","Steven Morales","3 días","5 Me gusta"));
-        pictures.add(new Picture("","Michael Andres","8 días","2 Me gusta"));
+        pictures.add(new Picture("https://transformtheworldartistically.files.wordpress.com/2013/11/stalpob.jpg","Bryan Rodríguez","5 días","10 Me gusta"));
+        pictures.add(new Picture("https://k40.kn3.net/taringa/2/2/1/2/4/8/87/biquev/B18.jpg?7295","Steven Morales","3 días","5 Me gusta"));
+        pictures.add(new Picture("https://k40.kn3.net/taringa/2/2/1/2/4/8/87/biquev/B18.jpg?7295","Michael Andres","8 días","2 Me gusta"));
         return pictures;
     }
 

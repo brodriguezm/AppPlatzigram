@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="height_image_cardiew">250dp</dimen>
-    <dimen name="cardCornerRadiusImage">10dp</dimen>
+    <dimen name="cardCornerRadiusImage">5dp</dimen>
     <dimen name="textSize_cardview_image">25sp</dimen>
     <dimen name="paddingLeft_cardview_image">15dp</dimen>
     <dimen name="textSize_time_cardview_image">15sp</dimen>
@@ -10,4 +10,15 @@
     <dimen name="paddingBottom_cardview_image">5dp</dimen>
     <dimen name="paddingTop_cardview_image">5dp</dimen>
     <dimen name="height_bottombar">55dp</dimen>
+    <dimen name="height_appbarlayout">256dp</dimen>
+    <dimen name="textSize_name_detail">20sp</dimen>
+    <dimen name="paddingLeft_pictureDetail">10dp</dimen>
+    <dimen name="paddingTop_pictureDetail">15dp</dimen>
+    <dimen name="textSize_likeNumber_detail">15sp</dimen>
+    <dimen name="divider_pictureDetail">1dp</dimen>
+    <dimen name="paddingTop_text_title_detail">30dp</dimen>
+    <dimen name="textSize_textTitle_detail">15sp</dimen>
+    <dimen name="paddingRight_likeDetail">5dp</dimen>
+    <dimen name="paddingBottom_likeDetail">10dp</dimen>
+    <dimen name="paddingLeft_text_containt_detail">30dp</dimen>
 </resources>

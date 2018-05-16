@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="www.bryansteven.ec.platzigram.Views.PictureDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_appbarlayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/primary">
+
+            <ImageView
+                android:id="@+id/imageHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image"
+                app:layout_collapseMode="parallax"/>
+            
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_name_detail"
+                android:textColor="@color/primary_text"
+                android:paddingTop="@dimen/paddingTop_pictureDetail"
+                android:paddingLeft="@dimen/paddingLeft_pictureDetail"
+                android:text="@string/text_name_cardview"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_like_detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_likeNumber_detail"
+                    android:textColor="@color/secondary_text"
+                    android:paddingLeft="@dimen/paddingLeft_pictureDetail"
+                    android:paddingRight="@dimen/paddingRight_likeDetail"
+                    android:paddingBottom="@dimen/paddingBottom_likeDetail"
+                    android:text="10"/>
+
+                <TextView
+                    android:id="@+id/txt_like_detail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_likeNumber_detail"
+                    android:textColor="@color/secondary_text"
+                    android:text="Me Gusta"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_pictureDetail"
+                android:background="@color/divider"/>
+
+            <TextView
+                android:id="@+id/txt_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_textTitle_detail"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/paddingTop_text_title_detail"
+                android:text="@string/dummy_title"/>
+
+            <TextView
+                android:id="@+id/txt_containt_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_textTitle_detail"
+                android:textColor="@color/primary_text"
+                android:paddingTop="@dimen/paddingTop_text_title_detail"
+                android:paddingLeft="@dimen/paddingLeft_text_containt_detail"
+                android:paddingRight="@dimen/paddingLeft_text_containt_detail"
+                android:text="@string/lorem"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
